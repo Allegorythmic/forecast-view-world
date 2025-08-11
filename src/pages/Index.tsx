@@ -1,13 +1,20 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import WeatherMap from "@/components/WeatherMap";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <main>
+      <header className="py-10">
+        <div className="container">
+          <h1 className="text-4xl md:text-5xl font-bold tracking-tight mb-2">Global Weather Forecast Map</h1>
+          <p className="text-muted-foreground max-w-2xl">
+            Ventusky-style interactive globe powered by Mapbox with forecast overlays for temperature, wind, and precipitation.
+          </p>
+        </div>
+      </header>
+      <section className="container pb-12">
+        <WeatherMap />
+      </section>
+    </main>
   );
 };
 
